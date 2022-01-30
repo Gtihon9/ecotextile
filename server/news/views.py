@@ -18,9 +18,5 @@ def post_list(request):
 
 def post_detail(request, post):
     post = get_object_or_404(Post, slug=post)
-    try:
-        images = Image.objects.filter(attached_to=post)
-    except Image.DoesNotExist:
-        images = []
-    print(images)
+    images = Image.objects.filter(attached_to=post)
     return render(request,'news/post/detail.html', {'post': post, 'images': images})
