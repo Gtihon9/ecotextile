@@ -9,7 +9,7 @@ body{
     border-radius: 5px;
 }
 
-.logo{
+.header-logo{
     color: black;
     font-family: Montserrat;
     font-weight: medium;
@@ -20,7 +20,8 @@ body{
 }
 
 .header-right
-{
+{   right: 0;
+    justify-content: center;
     float: right;
     height: 27px;
     width: 500;
@@ -48,4 +49,43 @@ body{
 .header-right a:hover {
    background-size: 100% .063em, 100% .063em;
    background-position: left bottom;
+}
+.content{
+    min-height: 98vh;
+}
+.footer{
+    position: absolute;
+    background: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    border-radius: 5px;
+}
+.footer-logo{
+    color: black;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 35px;
+    display:inline-block;
+}
+.footer-right{
+    padding-right: 50px;
+    float: right;
+    height: 27px;
+    width: 500;
+    margin-right: 50px;
+    margin-top: 11px;
+}
+
+.info{
+    padding-right: 100px;
+    margin-right: 125px;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
+    float: right;
+    display: inline-block;
 }

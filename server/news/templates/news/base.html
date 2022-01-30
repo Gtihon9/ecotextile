@@ -11,17 +11,26 @@
         </style>
     </head>
     <body>
-        <div class="header">
-            <a class="logo">НАШИ НОВОСТИ</a>
-            <div class="header-right">
-                <a class="active" href="#home">HOME</a>
-                <a href="#contact">CONTACT</a>
-                <a href="#about">ABOUT</a>
+        <div class="wrapper">
+            <div class="header">
+                <a class="header-logo">НАШИ НОВОСТИ</a>
+                <div class="header-right">
+                    <a class="active" href="#shop">МАГАЗИН</a>
+                    <a href="#news">НОВОСТИ</a>
+                    <a href="#about">О НАС</a>
+                </div>
             </div>
-        </div>
-        <div id="content">
-            {% block content %}
-            {% endblock %}
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <footer class="footer">
+                <a class="footer-logo">Магазин постельного белья<br>и текстильных изделий</a>
+                <div class="footer-right">
+                    <p class="info" >Адрес:</p>
+                    <p class="info">Контакты:</p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
