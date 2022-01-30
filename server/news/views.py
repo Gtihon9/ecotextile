@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .models import Post
+from .models import Post, Image
 
 MAX_POSTS_IN_PAGE = 3
 
@@ -11,16 +11,12 @@ def post_list(request):
     try:
         posts = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer deliver the first page
         posts = paginator.page(1)
     except EmptyPage:
-        # If page is out of range deliver last page of results
         posts = paginator.page(paginator.num_pages)
-    return render(request,
-                  'news/post/list.html',
-                  {'page': page,
-                   'posts': posts})
+    return render(request, 'news/post/list.html', {'page': page, 'posts': posts})
 
 def post_detail(request, post):
     post = get_object_or_404(Post, slug=post)
-    return render(request,'news/post/detail.html', {'post': post})
+    images = Image.objects.filter(attached_to=post)
+    return render(request,'news/post/detail.html', {'post': post, 'images': images})
