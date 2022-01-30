@@ -6,5 +6,9 @@
     <p class="date">
         Published {{ post.publish }} by {{ post.author }}
     </p>
+    {% for image in images %}
+    <img src="{{image.image.url}}">
+    {{image.attached_to.title}}
+    {% endfor %}
 {{ post.body|linebreaks }}
 {% endblock %}
