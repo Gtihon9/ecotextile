@@ -1,0 +1,91 @@
+body{
+    background: #E9E8E8
+}
+
+.header{
+    background: #FFFFFF;
+    height: 110px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.header-logo{
+    color: black;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 32px;
+    margin-left: 60px;
+    margin-top: 35px;
+    display:inline-block;
+}
+
+.header-right
+{   right: 0;
+    justify-content: center;
+    float: right;
+    height: 27px;
+    width: 500;
+    margin-right: 50px;
+    margin-top: 41px;
+    text-align: justify;
+}
+.header-right a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
+}
+
+.header-right a {
+   background-image: linear-gradient(#000000 50%, #000000 50%), linear-gradient(white 50%, white 50%);
+   background-position: center bottom;
+   background-repeat: no-repeat;
+   background-size: 0 .063em, 100% .063em;
+   color: black;
+   padding-bottom: .188em;
+   transition: background-size .5s;
+}
+.header-right a:hover {
+   background-size: 100% .063em, 100% .063em;
+   background-position: left bottom;
+}
+.content{
+    min-height: 98vh;
+}
+.footer{
+    position: absolute;
+    background: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    border-radius: 5px;
+}
+.footer-logo{
+    color: black;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 35px;
+    display:inline-block;
+}
+.footer-right{
+    padding-right: 50px;
+    float: right;
+    height: 27px;
+    width: 500;
+    margin-right: 50px;
+    margin-top: 11px;
+}
+
+.info{
+    padding-right: 100px;
+    margin-right: 125px;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
+    float: right;
+    display: inline-block;
+}
