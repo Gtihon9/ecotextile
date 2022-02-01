@@ -10,3 +10,6 @@ class Document(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_link(self) -> str:
+        return "/documents/" + str(self.pk)

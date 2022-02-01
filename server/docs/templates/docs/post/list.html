@@ -1,0 +1,7 @@
+{% extends "docs/base.html" %}
+{% block title %}My Blog{% endblock %}
+{% block content %}
+    {% for doc in docs %}
+    <a href="{{ doc.get_link }}" target="_blank">Тексто_файл</a>
+    {% endfor %}
+{% endblock %}
