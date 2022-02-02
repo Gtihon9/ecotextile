@@ -9,15 +9,20 @@
 {% for post in posts %}
     <div class="view">
 
-        <h2>
-            <a class="post-title-link" href={{ post.get_absolute_url }}>{{ post.title }}</a>
-        </h2>
-        <img src="{{post.main_image.url}}" width="400" height="400">
-        <div class="title">
+
+        <div class="photo tt ">
+            <img  src="{{post.main_image.url}}">
+        </div>
+        <div class="title tt">
+            <div class="post-title-link">
+                <a class="post-title-link" href={{ post.get_absolute_url }}>{{ post.title }}</a>
+            </div>
+            <div>
             {{ post.body|truncatewords:30|linebreaks }}
+            </div>
         </div>
         <div class="date">
-            Published {{ post.publish }} by {{ post.author }}
+            {{post.created}}
         </div>
     </div>
     {% endfor %}

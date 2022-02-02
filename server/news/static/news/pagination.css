@@ -5,5 +5,18 @@
 }
 .pagination{
     width: 100%;
-    text-align: center;
+}
+.previous{
+    float: left;
+    margin: 1em;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
+}
+.next{
+    float: right;
+    margin: 1em;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
 }

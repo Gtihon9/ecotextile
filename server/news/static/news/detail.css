@@ -1,0 +1,27 @@
+.date{
+    text-align: right;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    color: DimGray;
+    margin: 1em;
+}
+.post-title-link{
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: black; /* Цвет ссылки */
+  font-family: Montserrat;
+  font-weight: medium;
+  font-size: 28px;
+}
+.photo{
+    text-align: center;
+    align: center;
+    width: 100%;
+    height 100%;
+}
+img{
+    align: center;
+    width: 50%;
+    height 50%;
+}
