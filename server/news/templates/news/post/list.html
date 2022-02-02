@@ -10,13 +10,15 @@
     <div class="view">
 
         <h2>
-            <a href={{ post.get_absolute_url }}>{{ post.title }}</a>
+            <a class="post-title-link" href={{ post.get_absolute_url }}>{{ post.title }}</a>
         </h2>
         <img src="{{post.main_image.url}}" width="400" height="400">
-        <p class="date">
+        <div class="title">
+            {{ post.body|truncatewords:30|linebreaks }}
+        </div>
+        <div class="date">
             Published {{ post.publish }} by {{ post.author }}
-        </p>
-        {{ post.body|truncatewords:30|linebreaks }}
+        </div>
     </div>
     {% endfor %}
 
