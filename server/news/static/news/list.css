@@ -1,0 +1,17 @@
+p.date{
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 20px;
+}
+.view
+{
+    border: 1px solid;
+    width: 95%;
+    height: 33%;
+    padding: 0.5em;
+    margin: 0.3em;
+}
+img{
+	height: 100%;
+	width:100%
+}
