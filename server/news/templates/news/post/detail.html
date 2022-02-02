@@ -1,14 +1,17 @@
 {% extends "news/base.html" %}
 {% block title %}{{ post.title }}{% endblock %}
 {% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/list.css' %}">
     <h1>{{ post.title }}</h1>
     <img src="{{post.main_image.url}}">
-    <p class="date">
-        Published {{ post.publish }} by {{ post.author }}
-    </p>
+
     {% for image in images %}
     <img src="{{image.image.url}}">
     {{image.attached_to.title}}
     {% endfor %}
 {{ post.body|linebreaks }}
+<p class="date">
+    Published {{ post.publish }} by {{ post.author }}
+</p>
 {% endblock %}

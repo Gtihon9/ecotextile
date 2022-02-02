@@ -1,0 +1,45 @@
+
+.view
+{
+    border: 1px solid;
+    border-color: #cccccc;
+    width: 95%;
+    height: 33%;
+    padding: 0.5em;
+    margin: 0.3em;
+}
+img{
+	height: 100%;
+	width:100%
+}
+h1,h2 {
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+.post-title-link{
+  color: black; /* Цвет ссылки */
+  font-family: Montserrat;
+  font-weight: medium;
+  font-size: 32px;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease; /* Время изменения цвета */
+}
+.post-title-link:hover{
+  color: DimGray; /* Меняем цвет ссылки */
+}
+.date{
+    text-align: right;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    color: DimGray;
+}
+.title{
+    margin-top :0.5em;
+    margin: 1em;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 20px;
+}

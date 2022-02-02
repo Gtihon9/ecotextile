@@ -1,0 +1,9 @@
+.current{
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 22px;
+}
+.pagination{
+    width: 100%;
+    text-align: center;
+}
