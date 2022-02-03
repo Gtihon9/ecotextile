@@ -2,20 +2,24 @@
     font-family: Montserrat;
     font-weight: medium;
     font-size: 22px;
+
 }
 .pagination{
     width: 100%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .previous{
     float: left;
-    margin: 1em;
+    margin-left: 2em;
     font-family: Montserrat;
     font-weight: medium;
     font-size: 20px;
 }
 .next{
     float: right;
-    margin: 1em;
+    margin-right: 2em;
     font-family: Montserrat;
     font-weight: medium;
     font-size: 20px;

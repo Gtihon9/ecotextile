@@ -3,17 +3,25 @@
 {% block content %}
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'news/detail.css' %}">
-    <div class="post-title-link">{{ post.title }}</div>
+<div style="height: 25%;">
     <div class="photo">
-        <img src="{{post.main_image.url}}">
+        <img class="main-image" src="{{post.main_image.url}}">
     </div>
+    <div class="post-title-link">
+        {{ post.title }}
+    </div>
+    <div class="title">
+        {{ post.body|linebreaks }}
+    </div>
+    <div class="date">
+        {{post.created}}
+    </div>
+</div>
 
+<div id="gall">
     {% for image in images %}
-    <img class="photo" src="{{image.image.url}}">
-    {{image.attached_to.title}}
+    <img src="{{image.image.url}}" tabindex="0" border="3">
     {% endfor %}
-{{ post.body|linebreaks }}
-<div class="date">
-    {{post.created}}
+    <div></div>
 </div>
 {% endblock %}
