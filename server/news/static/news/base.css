@@ -27,7 +27,7 @@ h1, p {
     width: 100%;
     border-radius: 5px;
 }
-.header > a.logo{
+.logo{
     color: black;
     font-family: Montserrat;
     font-weight: medium;
